@@ -11,16 +11,10 @@ tail --lines 4 hello_world.c
 '''
 
 1. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.
+'''sh
+grep main hello_wordl.c
+'''
 
 1. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień.
 
-1. Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
-
-1. Zarchiwizuj cały katalog temp.
-
-1. Usuń katalog temp.
-
-1. Odtwórz z archiwum katalog temp.
-
-1. Posprzątaj na swoim koncie.
 
