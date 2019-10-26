@@ -1,20 +1,19 @@
-#Laboratorium2
+# Laboratorium2
 
 1. Wyświetl na ekran 2 pierwsze wiersze pliku program.c.
-'''sh
++
+```sh
 head --lines 2 hello_wordl.c
-'''
+```
 
 1. Wyświetl na ekran 4 ostatnie wiersze pliku program.c.
-'''sh
++
+```sh
 tail --lines 4 hello_world.c
-'''
+```
 
 1. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.
-'''sh
++
+```sh
 grep main hello_wordl.c
-'''
-
-1. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień.
-
-
+```
