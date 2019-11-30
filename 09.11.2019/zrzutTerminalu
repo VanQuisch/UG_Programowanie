@@ -1,0 +1,327 @@
+mordon@linux-p110-15:~$ ls
+code       mail    Obrazy   Publiczny  snap      temp
+Dokumenty  Muzyka  Pobrane  Pulpit     Szablony  Wideo
+mordon@linux-p110-15:~$ cd code
+mordon@linux-p110-15:~/code$ ls
+UG_Programowanie
+mordon@linux-p110-15:~/code$ cd UG_Programowanie
+mordon@linux-p110-15:~/code/UG_Programowanie$ code .
+mordon@linux-p110-15:~/code/UG_Programowanie$ mkdir 09.11.2019
+mordon@linux-p110-15:~/code/UG_Programowanie$ ls
+09.11.2019  Lab2  README.md
+mordon@linux-p110-15:~/code/UG_Programowanie$ cd 09.11.2019
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ touch hello_world.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ls
+hello_world.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ code .
+cannot stat path of the current working directory: Permission denied
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ code .
+cannot stat path of the current working directory: Permission denied
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ alias cc
+-bash: alias: cc: nie znaleziono
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ gcc --version
+gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc --version
+cc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ bat hello_world.c
+───────┬───────────────────────────────────────────────────────────────────────────────────
+       │ File: hello_world.c
+───────┼───────────────────────────────────────────────────────────────────────────────────
+───────┴───────────────────────────────────────────────────────────────────────────────────
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ bat hello_world.c
+───────┬───────────────────────────────────────────────────────────────────────────────────
+       │ File: hello_world.c
+───────┼───────────────────────────────────────────────────────────────────────────────────
+   1   │ int main(int argc, char const *argv[])
+   2   │ {
+   3   │ return 0;
+   4   │ }
+───────┴───────────────────────────────────────────────────────────────────────────────────
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+hello_world.c: In function ‘main’:
+hello_world.c:3:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("hello world\n")
+     ^~~~~~
+hello_world.c:3:5: warning: incompatible implicit declaration of built-in function ‘printf’
+hello_world.c:3:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+hello_world.c:4:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+hello_world.c: In function ‘main’:
+hello_world.c:3:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("hello world\n")
+     ^~~~~~
+hello_world.c:3:5: warning: incompatible implicit declaration of built-in function ‘printf’
+hello_world.c:3:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+hello_world.c:4:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+hello_world.c: In function ‘main’:
+hello_world.c:3:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("hello world\n");
+     ^~~~~~
+hello_world.c:3:5: warning: incompatible implicit declaration of built-in function ‘printf’
+hello_world.c:3:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall hello_world.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ echo $?
+0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./a.out
+hello world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: *** Nie podano obiektów i nie znaleziono makefile. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ touch Makefile
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: *** Brak obiektów. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: *** Brak obiektów. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+rm a.out
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+rm a.out
+rm: nie można usunąć 'a.out': Nie ma takiego pliku ani katalogu
+Makefile:5: recipe for target 'clean' failed
+make: *** [clean] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+rm -f a.out
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+rm -f a.out hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+rm -f a.out hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make hello_world
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make hello_world
+make: 'hello_world' jest aktualne.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make f2c
+make: Nie ma nic do zrobienia w 'f2c'.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+hello michał
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:6:34: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+     printf("hello %s\n", scanf("%s"););
+                                 ~^
+hello_world.c:6:37: error: expected ‘)’ before ‘;’ token
+     printf("hello %s\n", scanf("%s"););
+                                     ^
+hello_world.c:6:20: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+     printf("hello %s\n", scanf("%s"););
+                   ~^     ~~~~~~~~~~~
+                   %d
+<wbudowane>: recipe for target 'hello_world' failed
+make: *** [hello_world] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make hello_world
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:6:34: warning: format ‘%d’ expects a matching ‘int *’ argument [-Wformat=]
+     printf("hello %d\n", scanf("%d"););
+                                 ~^
+hello_world.c:6:37: error: expected ‘)’ before ‘;’ token
+     printf("hello %d\n", scanf("%d"););
+                                     ^
+<wbudowane>: recipe for target 'hello_world' failed
+make: *** [hello_world] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ l
+hello_world*  hello_world.c  Makefile
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ls
+hello_world  hello_world.c  Makefile
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+hello michał
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+hello michał
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:7:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%s", name);
+            ~^
+hello_world.c:8:20: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+     printf("hello %s\n", name);
+                   ~^
+                   %d
+hello_world.c:7:5: warning: ‘name’ is used uninitialized in this function [-Wuninitialized]
+     scanf("%s", name);
+     ^~~~~~~~~~~~~~~~~
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:7:5: warning: ‘name’ is used uninitialized in this function [-Wuninitialized]
+     scanf("%s", name);
+     ^~~~~~~~~~~~~~~~~
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:7:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+     scanf("%s", name);
+            ~^   ~~~~
+hello_world.c:8:20: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+     printf("hello %s\n", name);
+                   ~^     ~~~~
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+make: *** Brak reguł do zrobienia obiektu 'f2c', wymaganego przez 'all'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+*** stack smashing detected ***: <unknown> terminated
+Przerwane (zrzut pamięci)
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+hello Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:8:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%s", count);
+            ~^
+hello_world.c:11:20: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+     printf("count %s\n", count)
+                   ~^
+                   %d
+hello_world.c:12:5: error: expected ‘;’ before ‘printf’
+     printf("Siemasz %s\n", name);
+     ^~~~~~
+<wbudowane>: recipe for target 'hello_world' failed
+make: *** [hello_world] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:12:5: error: expected ‘;’ before ‘printf’
+     printf("Siemasz %s\n", name);
+     ^~~~~~
+<wbudowane>: recipe for target 'hello_world' failed
+make: *** [hello_world] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 22051
+Siemasz Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 1
+Siemasz Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 1
+Siemasz Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ 

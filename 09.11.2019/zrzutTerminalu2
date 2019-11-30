@@ -1,0 +1,358 @@
+mordon@linux-p110-15:~/Pulpit$ ls
+ 11-copy.txt   11.txt   dziwne.txt   Laboratoria  'Podstawowy program'   xaa   xab   xac
+mordon@linux-p110-15:~/Pulpit$ cd...
+cd...: nie znaleziono polecenia
+mordon@linux-p110-15:~/Pulpit$ cd ..
+mordon@linux-p110-15:~$ ls
+code       mail    Obrazy   Publiczny  snap      temp
+Dokumenty  Muzyka  Pobrane  Pulpit     Szablony  Wideo
+mordon@linux-p110-15:~$ cd code
+mordon@linux-p110-15:~/code$ cd UG_Programowanie
+mordon@linux-p110-15:~/code/UG_Programowanie$ ls
+09.11.2019  Lab2  README.md
+mordon@linux-p110-15:~/code/UG_Programowanie$ cd 09.11.2019/
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ls
+hello_world  hello_world.c  Makefile  zrzutTerminalu
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba !
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:14:12: warning: too many arguments for format [-Wformat-extra-args]
+     printf("%sgreen\n", KGRN, "Siemasz");
+            ^~~~~~~~~~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+green
+Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:14:12: warning: too many arguments for format [-Wformat-extra-args]
+     printf("%s ", KGRN, "Siemasz");
+            ^~~~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba  
+count 3
+ Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:14:12: warning: too many arguments for format [-Wformat-extra-args]
+     printf("%s ", "Siemasz", KGRN);
+            ^~~~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:5:19: warning: too many arguments for format [-Wformat-extra-args]
+     #define KGRN  "\x1B[32m"
+                   ^
+hello_world.c:14:12: note: in expansion of macro ‘KGRN’
+     printf(KGRN, "%s ", "Siemasz");
+            ^~~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:18:26: error: ‘KNRM’ undeclared (first use in this function); did you mean ‘KGRN’?
+     printf("%snormal\n", KNRM);
+                          ^~~~
+                          KGRN
+hello_world.c:18:26: note: each undeclared identifier is reported only once for each function it appears in
+<wbudowane>: recipe for target 'hello_world' failed
+make: *** [hello_world] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+green
+Siemasz normal
+Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+greenSiemasz normalBarnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+hello_world.c: In function ‘main’:
+hello_world.c:5:19: warning: too many arguments for format [-Wformat-extra-args]
+     #define KGRN  "\x1B[32m"
+                   ^
+hello_world.c:16:12: note: in expansion of macro ‘KGRN’
+     printf(KGRN, "%s ", "Siemasz", KWHT);
+            ^~~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world
+Barnaba
+count 3
+Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world hello_world_ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world hello_world_ansi.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world.c hello_world_ansi.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: Nie ma nic do zrobienia w 'all'.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world_ansi
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+make: Nie ma nic do zrobienia w 'all'.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./hello_world_ansi
+Barnaba
+count 3
+Siemasz Barnaba Barnaba Barnaba!
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world_ansi.c ansi.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ls
+ansi.c       hello_world_ansi    hello_world.c  zrzutTerminalu
+hello_world  hello_world_ansi.c  Makefile
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./ansi
+-bash: ./ansi: Nie ma takiego pliku ani katalogu
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./ansi
+-bash: ./ansi: Nie ma takiego pliku ani katalogu
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world_ansi.c roots_2.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    ansi.c  -lm -o ansi
+cc -Wall    roots_2.c  -lm -o roots_2
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp hello_world_ansi.c roots_2.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+cc -Wall    ansi.c  -lm -o ansi
+cc -Wall    roots_2.c  -lm -o roots_2
+roots_2.c: In function ‘main’:
+roots_2.c:22:5: error: ‘sqrt_delta’ undeclared (first use in this function); did you mean ‘delta’?
+     sqrt_delta = sqrt(delta);
+     ^~~~~~~~~~
+     delta
+roots_2.c:22:5: note: each undeclared identifier is reported only once for each function it appears in
+roots_2.c:16:12: warning: variable ‘x2’ set but not used [-Wunused-but-set-variable]
+ double x1, x2, delta;
+            ^~
+roots_2.c:16:8: warning: variable ‘x1’ set but not used [-Wunused-but-set-variable]
+ double x1, x2, delta;
+        ^~
+<wbudowane>: recipe for target 'roots_2' failed
+make: *** [roots_2] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make roots_2
+cc -Wall    roots_2.c  -lm -o roots_2
+roots_2.c: In function ‘main’:
+roots_2.c:22:5: error: ‘sqrt_delta’ undeclared (first use in this function); did you mean ‘delta’?
+     sqrt_delta = sqrt(delta);
+     ^~~~~~~~~~
+     delta
+roots_2.c:22:5: note: each undeclared identifier is reported only once for each function it appears in
+roots_2.c:16:12: warning: variable ‘x2’ set but not used [-Wunused-but-set-variable]
+ double x1, x2, delta;
+            ^~
+roots_2.c:16:8: warning: variable ‘x1’ set but not used [-Wunused-but-set-variable]
+ double x1, x2, delta;
+        ^~
+<wbudowane>: recipe for target 'roots_2' failed
+make: *** [roots_2] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    roots_2.c  -lm -o roots_2
+roots_2.c: In function ‘main’:
+roots_2.c:22:5: error: ‘sqrt_delta’ undeclared (first use in this function); did you mean ‘delta’?
+     sqrt_delta = sqrt(delta);
+     ^~~~~~~~~~
+     delta
+roots_2.c:22:5: note: each undeclared identifier is reported only once for each function it appears in
+<wbudowane>: recipe for target 'roots_2' failed
+make: *** [roots_2] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make roots_2
+cc -Wall    roots_2.c  -lm -o roots_2
+roots_2.c: In function ‘main’:
+roots_2.c:22:5: error: ‘sqrt_delta’ undeclared (first use in this function); did you mean ‘delta’?
+     sqrt_delta = sqrt(delta);
+     ^~~~~~~~~~
+     delta
+roots_2.c:22:5: note: each undeclared identifier is reported only once for each function it appears in
+<wbudowane>: recipe for target 'roots_2' failed
+make: *** [roots_2] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    roots_2.c  -lm -o roots_2
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./roots_2
+1 2 3  
+podano a, b, c = 1.00, 2.00, 3.00
+Policzone pierwiastki: x1 = -nan, x2 = -nan
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2 sums_100 sums_1000
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp roots_2.c sums_100.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cp roots_2.c sums_1000.c
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+cc -Wall    ansi.c  -lm -o ansi
+cc -Wall    roots_2.c  -lm -o roots_2
+cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N =100;
+     ^
+cc -Wall    sums_1000.c  -lm -o sums_1000
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clena
+make: *** Brak reguł do wykonania obiektu 'clena'. Stop.
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2 sums_100 sums_1000
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make
+cc -Wall    hello_world.c  -lm -o hello_world
+cc -Wall    hello_world_ansi.c  -lm -o hello_world_ansi
+cc -Wall    ansi.c  -lm -o ansi
+cc -Wall    roots_2.c  -lm -o roots_2
+cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N = 100;
+     ^
+cc -Wall    sums_1000.c  -lm -o sums_1000
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make clean
+rm -f a.out hello_world hello_world_ansi ansi roots_2 sums_100 sums_1000
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make sums_100
+cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N = 100;
+     ^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums_100
+S_4 = 0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N = 100;
+     ^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N = 100;
+     ^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall    sums_100.c  -lm -o sums_100 -W-unused-variable
+cc: error: unrecognized command line option ‘-W-unused-variable’; did you mean ‘-Wunused-variable’?
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ make sums_100
+cc -Wall    sums_100.c  -lm -o sums_100
+sums_100.c: In function ‘main’:
+sums_100.c:15:18: error: expected ‘)’ before ‘pow’
+     printf("%d " pow(i, 4));
+                  ^~~
+sums_100.c:15:14: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+     printf("%d " pow(i, 4));
+             ~^
+sums_100.c:8:5: warning: unused variable ‘exponent’ [-Wunused-variable]
+ int exponent = 4;
+     ^~~~~~~~
+sums_100.c:7:5: warning: unused variable ‘N’ [-Wunused-variable]
+ int N = 100;
+     ^
+<wbudowane>: recipe for target 'sums_100' failed
+make: *** [sums_100] Error 1
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall    sums_100.c  -lm -o sums_100 -W-unused-variable
+cc: error: unrecognized command line option ‘-W-unused-variable’; did you mean ‘-Wunused-variable’?
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall    sums_100.c  -lm -o sums_100 -Wno-unused-variable
+sums_100.c: In function ‘main’:
+sums_100.c:15:18: error: expected ‘)’ before ‘pow’
+     printf("%d " pow(i, 4));
+                  ^~~
+sums_100.c:15:14: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+     printf("%d " pow(i, 4));
+             ~^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall sums_100.c -lm -o sums_100 -Wno-unused-variable
+sums_100.c: In function ‘main’:
+sums_100.c:15:21: error: expected ‘)’ before ‘pow’
+     printf("%.0lf " pow(i, 4));
+                     ^~~
+sums_100.c:15:17: warning: format ‘%lf’ expects a matching ‘double’ argument [-Wformat=]
+     printf("%.0lf " pow(i, 4));
+             ~~~~^
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums100
+-bash: ./sums100: Nie ma takiego pliku ani katalogu
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums_100
+S_4 = 0
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall sums_100.c -lm -o sums_100 -Wno-unused-variable
+sums_100.c: In function ‘main’:
+sums_100.c:9:5: warning: variable ‘S_4’ set but not used [-Wunused-but-set-variable]
+ int S_4 = 0;
+     ^~~
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums_100
+1 16 81 256 625 1296 2401 4096 6561 10000 14641 20736 28561 38416 50625 65536 83521 104976 130321 160000 194481 234256 279841 331776 390625 456976 531441 614656 707281 810000 923521 1048576 1185921 1336336 1500625 1679616 1874161 2085136 2313441 2560000 2825761 3111696 3418801 3748096 4100625 4477456 4879681 5308416 5764801 6250000 6765201 7311616 7890481 8503056 9150625 9834496 10556001 11316496 12117361 12960000 13845841 14776336 15752961 16777216 17850625 18974736 20151121 21381376 22667121 24010000 25411681 26873856 28398241 29986576 31640625 33362176 35153041 37015056 38950081 40960000 43046721 45212176 47458321 49787136 52200625 54700816 57289761 59969536 62742241 65610000 68574961 71639296 74805201 78074896 81450625 84934656 88529281 92236816 96059601 
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall sums_100.c -lm -o sums_100 -Wno-unused-variable
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums_100
+1 16 81 256 625 1296 2401 4096 6561 10000 14641 20736 28561 38416 50625 65536 83521 104976 130321 160000 194481 234256 279841 331776 390625 456976 531441 614656 707281 810000 923521 1048576 1185921 1336336 1500625 1679616 1874161 2085136 2313441 2560000 2825761 3111696 3418801 3748096 4100625 4477456 4879681 5308416 5764801 6250000 6765201 7311616 7890481 8503056 9150625 9834496 10556001 11316496 12117361 12960000 13845841 14776336 15752961 16777216 17850625 18974736 20151121 21381376 22667121 24010000 25411681 26873856 28398241 29986576 31640625 33362176 35153041 37015056 38950081 40960000 43046721 45212176 47458321 49787136 52200625 54700816 57289761 59969536 62742241 65610000 68574961 71639296 74805201 78074896 81450625 84934656 88529281 92236816 96059601 
+96059601
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ cc -Wall sums_100.c -lm -o sums_100 -Wno-unused-variable
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ ./sums_100
+1 16 81 256 625 1296 2401 4096 6561 10000 14641 20736 28561 38416 50625 65536 83521 104976 130321 160000 194481 234256 279841 331776 390625 456976 531441 614656 707281 810000 923521 1048576 1185921 1336336 1500625 1679616 1874161 2085136 2313441 2560000 2825761 3111696 3418801 3748096 4100625 4477456 4879681 5308416 5764801 6250000 6765201 7311616 7890481 8503056 9150625 9834496 10556001 11316496 12117361 12960000 13845841 14776336 15752961 16777216 17850625 18974736 20151121 21381376 22667121 24010000 25411681 26873856 28398241 29986576 31640625 33362176 35153041 37015056 38950081 40960000 43046721 45212176 47458321 49787136 52200625 54700816 57289761 59969536 62742241 65610000 68574961 71639296 74805201 78074896 81450625 84934656 88529281 92236816 96059601 
+96059601
+mordon@linux-p110-15:~/code/UG_Programowanie/09.11.2019$ 
