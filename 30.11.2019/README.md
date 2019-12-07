@@ -1,4 +1,4 @@
-### Pętle
+# [Pętle](http://wbzyl.inf.ug.edu.pl/c/petle)
 
 * [X] Zadanie 0
 * [X] Zadanie 1
