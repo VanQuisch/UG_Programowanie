@@ -1,5 +1,6 @@
 ### Pętle
 
+* [X] Zadanie 0
 * [X] Zadanie 1
 * [X] Zadanie 2
 * [X] Zadanie 3
