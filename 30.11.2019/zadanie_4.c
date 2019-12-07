@@ -19,7 +19,7 @@ int main()
         wpisz_liczbe();
     };
 
-    for(int i=0; i<koniec; i++)
+    for(int i=0; i<=koniec; i++)
     {
      wynik+=i;
     }
