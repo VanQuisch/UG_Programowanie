@@ -14,7 +14,7 @@ int main()
     scanf("%d", &tablica[i]);
     };
 
-  if(tablica[0]>tablica[1]){max=tablica[0];} //szukanie najwięksej liczby
+  if(tablica[0]>tablica[1]){max=tablica[0];} //szukanie największej liczby
   else{max=tablica[1];};
   if(max<tablica[2]){max=tablica[2];};
   if(max<tablica[3]){max=tablica[3];};
