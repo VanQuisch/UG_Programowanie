@@ -13,6 +13,6 @@ int main() {
       if(c="\n")    {nl++;};
    }
    printf("liczba znaków odstępu = %d, \
-      tabulacji = %d, nowego wiersza = %d\n", ... );  // wyrzuca kosmiczne wartości // Nie powinno tyle dodawać
+      tabulacji = %d, nowego wiersza = %d\n", nb, nt, nl );  // wyrzuca kosmiczne wartości // Nie powinno tyle dodawać
    return 0;
 }
