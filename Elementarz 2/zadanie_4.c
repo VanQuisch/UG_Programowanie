@@ -4,15 +4,15 @@ int main() {
    int nb, nt, nl;
    char c;
 
-   nb = 0;  /* liczba znak體 odst阷u */
-   nt = 0;  /* liczba znak體 tabulacji */
-   nl = 0;  /* liczba znak體 nowego wiersza */
+   nb = 0;  /* liczba znak贸w odst臋pu */
+   nt = 0;  /* liczba znak贸w tabulacji */
+   nl = 0;  /* liczba znak贸w nowego wiersza */
    while ((c=getchar()) != EOF) {
-      if(getchar()=" ")     {nb++;};
-      if(getchar()="    ")  {nt++;};
-      if(getchar()="\n")    {nl++;};
+      if(c=" ")     {nb++;};
+      if(c="    ")  {nt++;};
+      if(c="\n")    {nl++;};
    }
-   printf("liczba znak體 odst阷u = %d, \
+   printf("liczba znak贸w odst臋pu = %d, \
       tabulacji = %d, nowego wiersza = %d\n", ... );
    return 0;
 }
