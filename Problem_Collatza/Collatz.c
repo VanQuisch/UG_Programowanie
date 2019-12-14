@@ -21,4 +21,5 @@ int main()
     printf("%d, ", tabela[numer_tabeli]);
     numer_tabeli++;
     };
+    printf("1 \n");
 }
