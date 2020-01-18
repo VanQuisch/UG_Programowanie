@@ -6,9 +6,6 @@ Foldery z pracą z lekcji:
   09.11.2019  
   16.11.2019  
   11.01.2020(zastępstwo)
-  
-Reszta plików to bałagan  
-
 
 4+,5
 --------------
